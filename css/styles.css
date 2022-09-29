@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;   
+    cursor: pointer;
+   
+}
+
+body{
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    width: 100%;
+
+}
+.caret{
+    color: black;
+}
+
+.svg:hover{
+    opacity: 0.8;
+}
+
+/* navigation */
+
+.navbar-brand{
+    font-size: 2rem;  
+}
+
+.nav a{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+.nav a:hover{
+    font-size: 1.8rem;
+}
+
+.navbar-header a, .footer{
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.footer{
+    color: #636e72;
+}
+
+.navbar span
+,.home a, 
+.footer span
+{
+    color: #c0392b;
+}
+
+.navbar{
+    position: fixed;
+    width:100%;
+    top: 0;
+    z-index: 11;
+   
+} 
+
+/* navigation */
+
+/* content */
+
+.content{
+    position: relative;
+    margin: 8em auto;
+    width: 85%;
+    
+}
+
+.content img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.svg{
+    width: 80px;
+    height:80px;
+}
+
+
+.claims{
+    margin: 5em 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 2px solid #636e72;
+    border-bottom: 2px solid #636e72;
+    padding: 4em 0;
+
+}
+
+.claims-item{
+    padding: 1.5em;
+}
+
+.claims-item img{
+    margin-bottom: 1em;
+}
+
+.claims .title{
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif; 
+    color: #2d3031;
+}
+
+.claims p{
+    color: #636e72;
+}
+
+.tagline{
+    margin-top: 2em;
+    font-size: 6rem;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.new-items{
+    border-top: 2px solid #636e72;
+    border-bottom: 2px solid #636e72;
+    padding: 4em 0;
+}
+
+.new-items-img{
+    
+    margin-left: 9em;
+}
+
+.img-hover img:hover{
+    opacity: 0.7;
+}
+
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Alike', serif; 
+    padding: 5em 0 0 0;
+}
+
+
+.input-group{
+    display: flex;
+}
+
+.social-icons{
+    margin: 1em 0;
+}
+
+.social-icons a:hover{
+    opacity: 0.8;
+}
+
+.social-icons a{
+    padding: 0 0.7em;
+}
+.social-icons a:hover{
+    text-decoration: none;
+}
+
+/* gallery section */
+.btns{
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    text-align:center;
+}
+
+.btns:hover{
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btns:focus{
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    background: #fffdfd;
+    margin-bottom: 4rem;
+    box-shadow: 5px 5px 5px grey;
+    max-height: 600px;
+    
+}
+.content-container-img{
+    object-fit: cover;
+    object-position: center;
+    width: 50%; 
+}
+
+.content-container-description{
+    padding: 2em;
+    font-family: 'Roboto', sans-serif; 
+}
+.content-container-description .price{
+    color:#962a1e;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: helvetica;
+}
+.content-container:nth-child(odd) img{
+    order: 1;
+}
+
+
+
+
+/* gallery section */
+
+/* shop section */
+
+.shop{
+    margin: 3em auto;
+}
+.options{
+    font-family: 'Alike', serif; 
+}
+
+.content-container-flex{
+    display: flex;
+    margin: 2em 0;
+    
+}
+
+.row-container{
+    display: flex;
+    margin: 0 1em;
+}
+.row-containers{
+    background: #fffdfd;
+    width: 100%;
+    box-shadow: 5px 5px 5px grey;
+    
+}
+.row-containers .caption{
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row-containers img{
+    width: 100%;
+    
+}
+.row-img{
+    object-fit: cover;
+    
+    
+}
+
+.row-containers img:hover{
+    opacity: 0.8;
+}
+
+.caption .price{
+    color:#962a1e;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.caption .btns{
+    width: 100%;
+    text-align: center;
+}
+
+.search,
+.select{
+    margin: 2em 1em 0 1em;
+    width: 70%;
+}
+
+.select{
+    width: 30%;
+}
+
+.content .options{
+    display: flex;
+}
+
+/* shop section */
+
+
+/*contact*/
+.contact{
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+
+
+/*contact*/
+
+
+
+
+
+
+
+
+
+.carousel-image{
+    height: 500px;
+}
+
+
+
+@media (max-width: 600px) {
+    .claims{
+        flex-direction: column;
+    }
+    .input-group{
+        display: flex;
+    }
+   .p-hide{
+       display: none;
+   }
+    .content-container-description .btns{
+        width:100%;
+    }
+    .content-container-img{
+        width: 100%;
+       
+    }
+    .content-container:nth-child(odd) img{
+        order: 0;
+    }
+    .row-container{
+        margin-bottom: 2em;
+    }
+    .row-containers{
+        background: #fffdfd;
+        width: 100%;
+        box-shadow: 5px 5px 5px grey;
+        
+    }
+    .content-container-flex{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .content .options{
+        flex-direction: column;
+    }
+    .search
+    {
+        margin: 2em 1em 0 1em;
+        width: 93%;
+    }
+
+    .select{
+        margin: 2em 1em 0 1em;
+        width: 93%;
+    }
+    .new-items-img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .contact{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    /*.input-group-addon{*/
+    /*    display: none;*/
+    /*}*/
+  
+
+   
+}
+
+@media (max-width: 750px){
+    .content-container-flex{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+@media (max-width: 740px){
+    .content-container{
+        flex-direction: column;
+        max-height: 100%;
+    }
+    .content-container-img{
+        width: 100%;
+       
+    }
+    .content-container:nth-child(odd) img{
+        order: 0;
+    }
+    .content-container-description .btns{
+        width:100%;
+    }
+}
+
+
+

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >
+  <title>Sopistikada Galleria</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="css/styles.css"> 
+
+
+</head>
+<body>
+        <nav class="navbar navbar-default">
+          <div class="container">
+              <div class="navbar-header">
+                  <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href="index.html" class="navbar-brand"><span>SOPISTIKADA </span>  GALLERIA</a>
+              </div>
+
+
+              <div class="collapse navbar-collapse" id="navbar">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html" class="active">HOME</a></li>
+                      <li><a href="gallery.html">GALLERY</a></li>    
+                      <li><a href="shop.html" style="border-bottom: 5px solid rgb(19, 18, 18);">SHOP</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-user"></span></a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+
+
+      <main class="content shop">
+
+            <div class="options">
+                <select class="select form-control" name="" id="">
+                    <option value="">Sort By</option>
+                    <option value="">Newest</option>
+                    <option value="">Low to High Price</option>
+                    <option value="">High to Low Price</option>
+
+                </select>
+
+                <div class="search input-group">
+                    <input type="text" placeholder="What are you looking for?" class="form-control" style="min-width:150px;">
+                    <span class="input-group-addon" style="width: 50px"><span class="glyphicon glyphicon-search"></span></span>
+                </div>
+            </div>
+
+            <div class="content-container-flex">
+                <div class="row-container">
+                    <div class="row-containers">
+                        <img src="image/bnw1.jpeg" alt="">
+                        <div class="caption">
+                            <h4><b>Palma <span onclick="myClick()" class="heart glyphicon glyphicon-heart-empty"></span></b></h4>
+                            <p>Studio Jephrim, Germany</p>
+                            <p class="price">₱15,000.00</p>
+                            <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row-container">
+                    <div class="row-containers">
+                        <img src="image/bnw4.jpeg" alt="">
+                        <div class="caption">
+                            <h4><b>Ami <span onclick="myClick2()" class="heart2 glyphicon glyphicon-heart-empty"></span></b></h4>
+                            <p>Yoh Komiyama, Japan</p>
+                            <p class="price">₱13,000.00</p>
+                            <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row-container">
+                    <div class="row-containers">
+                        <img src="image/bnw2.jpeg" alt="">
+                        <div class="caption">
+                            <h4><b>Dos <span onclick="myClick3()" class="heart3 glyphicon glyphicon-heart-empty"></span></b></h4>
+                            <p>Claymen, India</p>
+                            <p class="price">₱56,000.00</p>
+                            <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-container">
+                    <div class="row-containers">
+                        <img src="image/bnw4.jpeg" alt="">
+                        <div class="caption">
+                            <h4><b>Amia <span onclick="myClick4()" class="heart4 glyphicon glyphicon-heart-empty"></span></b></h4>
+                            <p>Claymen, India</p>
+                            <p class="price">₱56,000.00</p>
+                            <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                        </div>
+                    </div>
+                </div>
+               </div>
+
+
+           <div class="content-container-flex">
+            <div class="row-container">
+                <div class="row-containers">
+                    <img src="image/1.jpeg" alt="">
+                    <div class="caption">
+                        <h4><b>Oprah <span onclick="myClick5()" class="heart5 glyphicon glyphicon-heart-empty"></span></b></h4>
+                        <p>Studio Jephrim, Germany</p>
+                        <p class="price">₱15,000.00</p>
+                        <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="row-containers">
+                    <img src="image/4.jpeg" alt="">
+                    <div class="caption">
+                        <h4><b>Chadler <span onclick="myClick6()" class="heart6 glyphicon glyphicon-heart-empty"></span></b></h4>
+                        <p>Yoh Komiyama, Japan</p>
+                        <p class="price">₱13,000.00</p>
+                        <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="row-containers">
+                    <img src="image/2.jpeg" alt="">
+                    <div class="caption">
+                        <h4><b>Que <span onclick="myClick7()" class="heart7 glyphicon glyphicon-heart-empty"></span></b></h4>
+                        <p>Claymen, India</p>
+                        <p class="price">₱56,000.00</p>
+                        <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-container">
+                <div class="row-containers">
+                    <img src="image/3.jpeg" alt="">
+                    <div class="caption">
+                        <h4><b>Jen <span onclick="myClick8()" class="heart8 glyphicon glyphicon-heart-empty"></span></b></h4>
+                        <p>Batten and Kamp, Hong Kong</p>
+                        <p class="price">₱34,000.00</p>
+                        <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <div class="content-container-flex">
+            <div class="row-container">
+                <div class="row-containers">
+                    <img src="image/minimalist3.jpeg" alt="">
+                    <div class="caption">
+                        <h4><b>Ross <span onclick="myClick9()" class="heart9 glyphicon glyphicon-heart-empty"></span></b></h4>
+                        <p>Studio Jephrim, Germany</p>
+                        <p class="price">₱15,000.00</p>
+                        <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="row-containers">
+                    <img src="image/minimalist2.jpeg" alt="">
+                    <div class="caption">
+                        <h4><b>Leo <span onclick="myClick10()" class="heart10 glyphicon glyphicon-heart-empty"></span></b></h4>
+                        <p>Yoh Komiyama, Japan</p>
+                        <p class="price">₱13,000.00</p>
+                        <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-container">
+                <div class="row-containers">
+                    <img src="image/9.jpeg" alt="">
+                    <div class="caption">
+                        <h4><b>Penn <span onclick="myClick11()" class="heart11 glyphicon glyphicon-heart-empty"></span></b></h4>
+                        <p>Claymen, India</p>
+                        <p class="price">₱56,000.00</p>
+                        <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-container">
+                <div class="row-containers">
+                    <img src="image/minimalist2.jpeg" alt="">
+                    <div class="caption">
+                        <h4><b>Bernd <span onclick="myClick12()" class="heart12 glyphicon glyphicon-heart-empty"></span></b></h4>
+                        <p>Batten and Kamp, Hong Kong</p>
+                        <p class="price">₱34,000.00</p>
+                        <a href="#" class="btns" data-toggle="modal" data-target="#myModal5"><b>Buy Now</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+           
+        
+
+
+
+
+
+        <div class="newsletter-form"> 
+          <p class="text-center">Sign up for the latest updates in contemporary art & design!</p>
+          <div class="input-group">
+            <input type="email" placeholder="Email address" class="form-control" style="width: 300px; max-width:250px">
+            <span class="input-group-addon" style="width: 80px">Sign Up</span>
+          </div>
+
+          <h1 class="footer text-center"><span>SOPISTIKADA </span>  GALLERIA</h1>
+          
+          <div class="social-icons">        
+              <a href="https://www.facebook.com/riomarrie/" target="_blank"><i class="icon-facebook icon-large" style="color: rgb(58, 55, 55);"></i></a>
+              <a href="https://www.instagram.com/riomarrie/" target="_blank"><i class="icon-instagram icon-large" style="color: rgb(58, 55, 55);"></i></a>
+              <a href="https://www.instagram.com/riomarrie/" target="_blank"><i class="icon-twitter icon-large" style="color: rgb(58, 55, 55);"></i></a>
+          </div>
+
+          
+
+        </div>
+
+      </main>
+
+
+
+
+
+
+
+
+
+
+
+      <!--MODALS-->
+      <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Sign In</h3>
+              <br>
+              <a class="modal-title" data-toggle="modal" data-target="#myModal3" class="close">Create new account!</a>
+             
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Email">
+                <br>
+                <input type="password" class="form-control" placeholder="Password">
+                <br>
+                <button class="col-xs-12 btn btn-success">SIGN IN</button>
+                <br>
+            </div>
+            <div class="modal-footer">
+           
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+
+      <div id="myModal3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Sign Up For New Account</h3>
+              
+
+             
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Enter Full Name">
+                <br>
+                <input type="text" class="form-control" placeholder="Enter Email">
+                <br>
+                <input type="password" class="form-control" placeholder="Enter Password">
+                <br>
+                <button class="col-xs-12 btn btn-success">SIGN UP</button>
+                <br>
+
+                
+            </div>
+            <div class="modal-footer">
+           
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+
+      <div id="myModal4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Checkout Form</h3>
+            </div>
+
+            <div class="modal-body">
+        
+                    <h5>Billing Address</h5>
+                    
+                    <input type="text" class="form-control" placeholder="Full Name">
+                    <br>
+                    <input type="text" class="form-control" placeholder="Email">
+                    <br>
+                    <input type="text" class="form-control" placeholder="Address">
+                    <br>
+                    <input type="text" class="form-control" placeholder="City">
+        
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" class="form-control" placeholder="Rio Marie Junio">
+                    <br>
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" class="form-control" placeholder="SA-1234-4567-891">
+                    <br>
+
+                    <h3>Cart
+                        <span class="price" style="color:black">
+                          <i class="fa fa-shopping-cart"></i>
+                          <b>4</b>
+                        </span>
+                      </h3>
+                      <p><a href="shop.html">One Minimalism</a> <span class="price">P15,000.00</span></p>
+                      <p><a href="shop.html">Palma</a> <span class="price">P20,000.00</span></p>
+                      <p><a href="shop.html">Black & White</a> <span class="price">P25,000.00</span></p>
+                      <p><a href="shop.html">Ami</a> <span class="price">P120,000.00</span></p>
+                      <hr>
+                      <p>Total <span class="price" style="color:black"><b>P180,00.00</b></span></p>
+
+
+                    <button class="col-xs-12 btn btn-success">Continue to Checkout</button>
+                    
+                    
+             
+                </div>   
+            <div class="modal-footer">
+           
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+      <div id="myModal5" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title text-center">Payment Details</h3>
+              
+
+             
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Full Name">
+                <br>
+                <input type="text" class="form-control" placeholder="Email">
+                <br>
+                <input type="password" class="form-control" placeholder="Address">
+                <br>
+                <button class="col-xs-12 btn btn-success">Buy Now</button>
+                <br>
+            </div>
+            <div class="modal-footer">
+           
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+    <!-- END OF MODALS -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1500
+      });
+
+    function myClick() {
+      const heart = document.querySelector('.heart');
+     
+    
+      if(heart.classList.contains('glyphicon-heart-empty')){
+          heart.classList.remove('glyphicon-heart-empty');
+          heart.classList.add('glyphicon-heart');
+      } else if(heart.classList.contains('glyphicon-heart')){
+          heart.classList.remove('glyphicon-heart');
+          heart.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick2() {
+      const heart2 = document.querySelector('.heart2');
+     
+    
+      if(heart2.classList.contains('glyphicon-heart-empty')){
+          heart2.classList.remove('glyphicon-heart-empty');
+          heart2.classList.add('glyphicon-heart');
+      } else if(heart2.classList.contains('glyphicon-heart')){
+          heart2.classList.remove('glyphicon-heart');
+          heart2.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick3() {
+      const heart3 = document.querySelector('.heart3');
+     
+    
+      if(heart3.classList.contains('glyphicon-heart-empty')){
+          heart3.classList.remove('glyphicon-heart-empty');
+          heart3.classList.add('glyphicon-heart');
+      } else if(heart3.classList.contains('glyphicon-heart')){
+          heart3.classList.remove('glyphicon-heart');
+          heart3.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick4() {
+      const heart4 = document.querySelector('.heart4');
+     
+      if(heart4.classList.contains('glyphicon-heart-empty')){
+          heart4.classList.remove('glyphicon-heart-empty');
+          heart4.classList.add('glyphicon-heart');
+      } else if(heart4.classList.contains('glyphicon-heart')){
+          heart4.classList.remove('glyphicon-heart');
+          heart4.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick5() {
+      const heart5 = document.querySelector('.heart5');
+     
+      if(heart5.classList.contains('glyphicon-heart-empty')){
+          heart5.classList.remove('glyphicon-heart-empty');
+          heart5.classList.add('glyphicon-heart');
+      } else if(heart5.classList.contains('glyphicon-heart')){
+          heart5.classList.remove('glyphicon-heart');
+          heart5.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick6() {
+      const heart6 = document.querySelector('.heart6');
+     
+    
+      if(heart6.classList.contains('glyphicon-heart-empty')){
+          heart6.classList.remove('glyphicon-heart-empty');
+          heart6.classList.add('glyphicon-heart');
+      } else if(heart6.classList.contains('glyphicon-heart')){
+          heart6.classList.remove('glyphicon-heart');
+          heart6.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick7() {
+      const heart7 = document.querySelector('.heart7');
+     
+    
+      if(heart7.classList.contains('glyphicon-heart-empty')){
+          heart7.classList.remove('glyphicon-heart-empty');
+          heart7.classList.add('glyphicon-heart');
+      } else if(heart7.classList.contains('glyphicon-heart')){
+          heart7.classList.remove('glyphicon-heart');
+          heart7.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick8() {
+      const heart8 = document.querySelector('.heart8');
+     
+    
+      if(heart8.classList.contains('glyphicon-heart-empty')){
+          heart8.classList.remove('glyphicon-heart-empty');
+          heart8.classList.add('glyphicon-heart');
+      } else if(heart8.classList.contains('glyphicon-heart')){
+          heart8.classList.remove('glyphicon-heart');
+          heart8.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick9() {
+      const heart9 = document.querySelector('.heart9');
+     
+    
+      if(heart9.classList.contains('glyphicon-heart-empty')){
+          heart9.classList.remove('glyphicon-heart-empty');
+          heart9.classList.add('glyphicon-heart');
+      } else if(heart9.classList.contains('glyphicon-heart')){
+          heart9.classList.remove('glyphicon-heart');
+          heart9.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick10() {
+      const heart10 = document.querySelector('.heart10');
+     
+    
+      if(heart10.classList.contains('glyphicon-heart-empty')){
+          heart10.classList.remove('glyphicon-heart-empty');
+          heart10.classList.add('glyphicon-heart');
+      } else if(heart10.classList.contains('glyphicon-heart')){
+          heart10.classList.remove('glyphicon-heart');
+          heart10.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+
+    function myClick11() {
+      const heart11 = document.querySelector('.heart11');
+     
+    
+      if(heart11.classList.contains('glyphicon-heart-empty')){
+          heart11.classList.remove('glyphicon-heart-empty');
+          heart11.classList.add('glyphicon-heart');
+      } else if(heart11.classList.contains('glyphicon-heart')){
+          heart11.classList.remove('glyphicon-heart');
+          heart11.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    function myClick12() {
+      const heart12 = document.querySelector('.heart12');
+     
+    
+      if(heart12.classList.contains('glyphicon-heart-empty')){
+          heart12.classList.remove('glyphicon-heart-empty');
+          heart12.classList.add('glyphicon-heart');
+      } else if(heart12.classList.contains('glyphicon-heart')){
+          heart12.classList.remove('glyphicon-heart');
+          heart12.classList.add('glyphicon-heart-empty');
+      }
+    };
+
+    
+
+
+
+    </script>
+
+</body>
+</html>

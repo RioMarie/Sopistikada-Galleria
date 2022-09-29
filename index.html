@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >
+  <title>Sopistikada Galleria</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  
+
+  <link rel="stylesheet" href="css/styles.css"> 
+
+
+</head>
+<body>
+        <nav class="navbar navbar-default">
+          <div class="container">
+              <div class="navbar-header">
+                  <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href="index.html" class="navbar-brand"><span>SOPISTIKADA </span>  GALLERIA</a>
+              </div>
+
+
+              <div class="collapse navbar-collapse" id="navbar">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html" style="border-bottom: 5px solid rgb(19, 18, 18);">HOME</a></li>
+                      <li><a href="gallery.html">GALLERY</a></li> 
+                               
+                      <li><a href="shop.html">SHOP</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-user"></span></a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+
+
+      <main class="content">
+          <div class="carousel slide" data-ride="carousel" id="slider">
+              <ol class="carousel-indicators">
+                  <li data-target="#slider" data-slide-to="0" class="active"></li>
+                  <li data-target="#slider" data-slide-to="1"></li>
+              </ol>
+        
+
+          <div class="carousel-inner">
+              <div class="item active">
+                  <img src="image/1.jpeg" class="carousel-image img-responsive img-thumbnail" style="height: 450px; width: 100%;">
+                  <div class="carousel-caption">
+                      <h3>Art by Leonard Hofsdtater</h3>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="image/2.jpeg" class="carousel-image img-responsive img-thumbnail" style="height: 450px; width: 100%;">
+                  <div class="carousel-caption">
+                    <h3>Curated by Penny Hofsdtater</h3>
+                </div>
+              </div> 
+          </div>
+
+            <a href="#slider" data-slide="prev" class="left carousel-control">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a href="#slider" data-slide="next" class="right carousel-control">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+
+          <h1 class="text-center tagline">Your imagination. Our creation.</h1>
+
+          <div class="claims">
+
+            <div class="claims-item">
+                <img src="image/icon1.svg" class="svg" alt="">
+                <p class="title">Curated Art and Design</p>
+                <p>We feature a curated selection of the best pieces from both emerging and established artists and designers worldwide.</p>
+            </div>
+
+            <div class="claims-item">
+              <img src="image/icon2.svg" class="svg" alt="">
+              <p class="title">Authentic and Certified</p>
+              <p>Artworks and design items have been carefully hand-picked and vetted by our team. Artworks come with Certificates of Authenticity from the Artist or Gallery.</p>
+            </div>
+
+            <div class="claims-item">
+              <img src="image/icon3.svg" class="svg" alt="">
+              <p class="title">Best Service</p>
+              <p>Our team of advisors will help to find the right piece for you; whether it’s your first purchase or your hundredth! Let us know what you’re into and we’ll do the rest.</p>
+            </div>
+          </div>
+
+          
+          <h1 class="text-center tagline" style="margin-bottom:1em;">Browse by Artwork Style</h1>
+
+
+          <div class="row img-hover">
+            <div class="col-md-4">
+                <a href="image/minimalist2.jpeg" data-lightbox="gallery" data-title="Minimalism" class="thumbnail">
+                    <img src="image/minimalist2.jpeg" alt="">
+                </a> 
+            </div>
+
+            <div class="col-md-4">
+                <a href="image/bnw2.jpeg" data-lightbox="gallery" data-title="Black and White" class="thumbnail">
+                    <img src="image/bnw2.jpeg" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="image/6.jpeg" data-lightbox="gallery" data-title="Abstract" class="thumbnail">
+                    <img src="image/6.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="row img-hover">
+            <div class="col-md-4">
+                <a href="image/bnw1.jpeg" data-lightbox="gallery" data-title="Palm Tree" class="thumbnail">
+                    <img src="image/bnw1.jpeg" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="image/minimalist1.jpg" data-lightbox="gallery" data-title="Minimalist Interior" class="thumbnail">
+                    <img src="image/minimalist1.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="image/9.jpeg" data-lightbox="gallery" data-title="Abstraction" class="thumbnail">
+                    <img src="image/9.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+
+
+        
+
+        <h1 class="text-center tagline" style="margin-bottom:1em;">New In Design</h1>
+        <div class="new-items img-hover">
+          <div class="row">
+            <div class="col-md-3">
+                <a href="#m1" data-toggle="modal" class="thumbnail">
+                    <img src="image/new-items1.jpg" alt="">
+                </a>
+                <div class="modal fade" id="m1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">Design Objects</div>
+                            <div class="modal-body">
+                                <img src="image/new-items1.jpg" alt="" class="new-items-img img-thumbnail">
+                            </div>
+                            <div class="modal-footer"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <a href="#m2" data-toggle="modal" class="thumbnail">
+                    <img src="image/new-items2.jpg" alt="">
+                </a>
+                <div class="modal fade" id="m2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">Furniture</div>
+                            <div class="modal-body">
+                                <img src="image/new-items2.jpg" alt="" class="new-items-img img-thumbnail">
+                            </div>
+                            <div class="modal-footer"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <a href="#m3" data-toggle="modal" class="thumbnail">
+                    <img src="image/new-items3.jpg" alt="">
+                </a>
+
+                <div class="modal fade" id="m3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">Lighting</div>
+                            <div class="modal-body">
+                                <img src="image/new-items3.jpg" alt="" class="new-items-img img-thumbnail">
+                            </div>
+                            <div class="modal-footer"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+              <a href="#m4" data-toggle="modal" class="thumbnail">
+                  <img src="image/new-items4.jpg" alt="">
+              </a>
+
+              <div class="modal fade" id="m4">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header text-center">Tableware</div>
+                          <div class="modal-body">
+                              <img src="image/new-items4.jpg" alt="" class="new-items-img img-thumbnail">
+                          </div>
+                          <div class="modal-footer"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        </div>
+
+
+        <div class="newsletter-form"> 
+          <p class="text-center">Sign up for the latest updates in contemporary art & design!</p>
+          <div class="input-group">
+            <input type="email" placeholder="Email address" class="form-control" style=" max-width:400px">
+            <span class="input-group-addon" style="width: 80px">Sign Up</span>
+          </div>
+
+          <h1 class="footer text-center"><span>SOPISTIKADA </span>  GALLERIA</h1>
+
+          <div class="social-icons">        
+              <a href="https://www.facebook.com/riomarrie/" target="_blank"><i class="icon-facebook icon-large" style="color: rgb(58, 55, 55);"></i></a>
+              <a href="https://www.instagram.com/riomarrie/" target="_blank"><i class="icon-instagram icon-large" style="color: rgb(58, 55, 55);"></i></a>
+              <a href="https://www.instagram.com/riomarrie/" target="_blank"><i class="icon-twitter icon-large" style="color: rgb(58, 55, 55);"></i></a>
+          </div>
+
+           
+
+        </div>
+
+      </main>
+
+
+      <!--MODALS-->
+
+
+      <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Sign In</h3>
+              <br>
+              <a class="modal-title" data-toggle="modal" data-target="#myModal3" class="close">Create new account!</a>
+             
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Email">
+                <br>
+                <input type="password" class="form-control" placeholder="Password">
+                <br>
+                <button class="col-xs-12 btn btn-success">SIGN IN</button>
+                <br>
+            </div>
+            <div class="modal-footer">
+           
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+
+
+      <div id="myModal3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Sign Up For New Account</h3>
+              
+
+             
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Enter Full Name">
+                <br>
+                <input type="text" class="form-control" placeholder="Enter Email">
+                <br>
+                <input type="password" class="form-control" placeholder="Enter Password">
+                <br>
+                <button class="col-xs-12 btn btn-success">SIGN UP</button>
+                <br>
+
+                
+            </div>
+            <div class="modal-footer">
+           
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+
+      <div id="myModal4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Checkout Form</h3>
+            </div>
+
+            <div class="modal-body">
+        
+                    <h5>Billing Address</h5>
+                    
+                    <input type="text" class="form-control" placeholder="Full Name">
+                    <br>
+                    <input type="text" class="form-control" placeholder="Email">
+                    <br>
+                    <input type="text" class="form-control" placeholder="Address">
+                    <br>
+                    <input type="text" class="form-control" placeholder="City">
+        
+
+                 
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" class="form-control" placeholder="Rio Marie Junio">
+                    <br>
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" class="form-control" placeholder="SA-1234-4567-891">
+                    <br>
+                    
+                    <h3>Cart
+                        <span class="price" style="color:black">
+                          <i class="fa fa-shopping-cart"></i>
+                          <b>4</b>
+                        </span>
+                      </h3>
+                      <p><a href="shop.html">One Minimalism</a> <span class="price">P15,000.00</span></p>
+                      <p><a href="shop.html">Palma</a> <span class="price">P20,000.00</span></p>
+                      <p><a href="shop.html">Black & White</a> <span class="price">P25,000.00</span></p>
+                      <p><a href="shop.html">Ami</a> <span class="price">P120,000.00</span></p>
+                      <hr>
+                      <p>Total <span class="price" style="color:black"><b>P180,00.00</b></span></p>
+  
+  
+                    <button class="col-xs-12 btn btn-success">Continue to Checkout</button>
+
+
+
+
+             </div>   
+            <div class="modal-footer">
+           
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+
+   
+  
+</body>
+</html>
